@@ -27,6 +27,9 @@ const NavigationBar = () => {
           <Link href="/education" className="hover:text-blue-600 transition">
             Education
           </Link>
+          <Link href="/skills" className="hover:text-blue-600 transition">
+            Skills
+          </Link>
           <Link href="/experience" className="hover:text-blue-600 transition">
             Experience
           </Link>
