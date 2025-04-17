@@ -17,9 +17,13 @@ const NavigationBar = () => {
 
         {/* Right side: Nav + Toggle */}
         <nav className="flex items-center gap-8 text-sm md:text-base font-medium">
-          <Link href="/" className="hover:text-blue-600 transition">
+          {/* <Link href="/" className="hover:text-blue-600 transition">
             Home
-          </Link>
+          </Link> */}
+          <a href="#home" className="hover:text-blue-600 transition">
+  Home
+</a>
+
           <Link href="/education" className="hover:text-blue-600 transition">
             Education
           </Link>
