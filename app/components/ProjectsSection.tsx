@@ -138,40 +138,40 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Batcat",
+    title: "HackerNews Server Backend",
     description:
-      "Batcat is a Discord bot that handles server moderation and manages spam control.",
-    githubUrl: "https://github.com/yourusername/batcat",
+      "A scalable TypeScript based backend for a social news platform which includes user authentication, posts, comments, and likes. Deployed it by implementing the CI/CD pipelines in Azure.",
+    githubUrl: "https://github.com/thanmayi0610/hackernews-server",
   },
   {
-    title: "GradesCalculator",
+    title: "Personal Portfolio Website",
     description:
-      "A package to calculate an average with different weights for each grade.",
-    githubUrl: "https://github.com/yourusername/gradescalculator",
-    pypiUrl: "https://pypi.org/project/gradescalculator",
+      "A personal portfolio website showcasing my projects, skills, and experiences built with Next.js and tailwindCSS.",
+    githubUrl: "https://github.com/thanmayi0610/thanmayi",
+    
   },
   {
-    title: "FamilyGroupDraw",
+    title: "Hono-Website-Clone",
     description:
-      "Simple web app to draw names among multiple groups, preventing members of the same group drawing each other.",
-    githubUrl: "https://github.com/yourusername/familygroupdraw",
-    liveUrl: "https://familygroupdraw.vercel.app",
+      "A responsive clone of the Hono website, replicating its design and layout for learning and development purposes.",
+    githubUrl: "https://github.com/thanmayi0610/copper",
+   
   },
   {
-    title: "node-ChatApp",
-    description: "A chat application built with Node.js and WebSocket.",
-    githubUrl: "https://github.com/yourusername/node-chatapp",
+    title: "An Application to Detect Plant Disease and Remedies",
+    description: "A machine learning-based system using image recognition for early crop disease detection, offering real-time monitoring and actionable solutions for sustainable farming.",
+    
   },
   {
-    title: "Portfolio",
-    description: "My personal portfolio website built with React.",
-    private: true,
+    title: "Sorting Visualizer",
+    description: "A web-based sorting visualizer that interactively demonstrates Merge, Bubble, Selection, Insertion, and Quick Sort algorithms to enhance understanding of their operations and efficiency.",
+    
   },
   {
-    title: "347 projet",
+    title: "IPL Score Prediction",
     description:
-      "Web app built with Docker Compose, Flask backend, MongoDB and React frontend.",
-    githubUrl: "https://github.com/yourusername/347-projet",
+      "Developed a machine learning model to predict IPL scores in live matches using Python, leveraging historical data, player stats, and real-time match conditions.",
+    
   },
 ];
 

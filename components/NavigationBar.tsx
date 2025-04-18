@@ -22,8 +22,8 @@ const NavigationBar = () => {
           {/* <Link href="/" className="hover:text-blue-600 transition">
             Home
           </Link> */}
-          <a href="#home" className="hover:text-blue-600 transition">
-  Home
+          <a href="#About" className="hover:text-blue-600 transition">
+          About
 </a>
 <a href="#Education" className="hover:text-blue-600 transition">
   Education
@@ -38,6 +38,9 @@ Experience
 <a href="#Projects" className="hover:text-blue-600 transition">
 Projects
 </a>    
+<a href="#Interests" className="hover:text-blue-600 transition">
+Interests
+</a>  
 <a href="#Contact" className="hover:text-blue-600 transition">
 Contact Me
 </a>      
