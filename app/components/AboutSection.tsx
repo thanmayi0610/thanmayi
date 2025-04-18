@@ -25,7 +25,7 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section id="About" className="w-full  px-4 sm:px-8 py-8">
+    <section id="About" className="w-full px-4 sm:px-8 py-8">
       <Container>
         <h2 className="text-xl font-bold tracking-widest mb-6">
           ABOUT ME <span className="border-b-2 border-yellow-400 ml-2 inline-block w-12" />
@@ -45,8 +45,8 @@ const AboutSection = () => {
             <h1 className="text-3xl md:text-4xl font-bold text-yellow-400">
               Fullstack Developer
             </h1>
-            <p className="text-lg">I develop features... and unexpected bugs😅</p>
-            <p>
+            <p className="text-lg text-indent-8">I develop features... and unexpected bugs😅</p>
+            <p className="text-indent-8">
               Hello! I'm currently pursuing a degree in{" "}
               <span className="text-yellow-300 font-semibold">
                 Bachelor of Engineering in Information Science
@@ -54,12 +54,12 @@ const AboutSection = () => {
               from Siddaganga Institute Of Technology. I'm a curious and keen
               learner, always eager to explore new technologies and concepts.
             </p>
-            <p>
+            <p className="text-indent-8">
               Right now, I'm gaining hands-on experience through an internship at
               <span className="text-yellow-300 font-semibold"> Stack Lane</span>{" "}
               <span className="text-yellow-300 font-semibold">by Purple Shorts</span>, where I'm learning how real-world software development works and sharpening my technical skills.
             </p>
-            <p>
+            <p className="text-indent-8">
               My future goal is to become a skilled Software Engineer, building
               solutions that make a real impact. This field continuously inspires
               me to dive deeper, grow my knowledge, and work towards a successful
@@ -89,4 +89,3 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
-
