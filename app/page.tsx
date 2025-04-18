@@ -6,6 +6,9 @@ import React from "react";
 import HeroSection from "./components/HeroSection";
 import EducationSection from "./components/EducationSection";
 import SkillsSection from "./components/SkillsSection";
+import ExperienceSection from "./components/ExperienceSection";
+import ProjectsSection from "./components/ProjectsSection";
+import ContactSection from "./components/ContactSection";
 
 
 const RootPage = () => {
@@ -15,7 +18,9 @@ const RootPage = () => {
       <HeroSection />
       <EducationSection />
       <SkillsSection />
-     
+      <ExperienceSection />
+      <ProjectsSection />
+      <ContactSection/>
     </div>
   );
 };

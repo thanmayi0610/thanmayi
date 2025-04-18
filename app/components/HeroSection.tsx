@@ -1,5 +1,6 @@
 
   "use client";
+  import { useEffect, useState } from "react";
 import Image from "next/image";
 import {
   FaMusic,
@@ -26,12 +27,31 @@ const interests = [
 ];
 
 const HeroSection = () => {
+  const birthDate = new Date("2003-08-06T00:00:00");
+
+  const calculateAge = () => {
+    const now = new Date();
+    const diff = now.getTime() - birthDate.getTime();
+    const ageInYears = diff / (1000 * 60 * 60 * 24 * 365.25);
+    return ageInYears;
+  };
+
+  const [age, setAge] = useState<number>(calculateAge());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAge(calculateAge());
+    }, 100); // updates every 100ms
+
+    return () => clearInterval(interval); // cleanup
+  }, []);
+
   return (
     <section
       id="home"
     //   className="w-full min-h-screen dark:bg-black flex flex-col px-8 py-8"
     // className="w-full min-h-screen dark:bg-black px-4 sm:px-8 py-8"
-    className="w-full min-h-screen dark:bg-black px-4 sm:px-8 py-8"
+    className="w-full min-h-screen  px-4 sm:px-8 py-8"
     
     >
         <Container>
@@ -92,7 +112,7 @@ const HeroSection = () => {
           </p>
           <div className="grid grid-cols-2 gap-4 mt-4 text-sm">
             <div>
-              📅 Age: <span className="text-yellow-300">23.137749130 years</span>
+              📅 Age: <span className="text-yellow-300">{age.toFixed(9)} years</span>
             </div>
             <div>
               🎓 Degree: <span className="text-yellow-300">CSE Undergrad</span>

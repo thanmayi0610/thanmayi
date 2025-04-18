@@ -90,29 +90,29 @@ const EducationSection = () => {
         <div className="relative">
           <div className="absolute -left-4 top-1 w-3 h-3 bg-yellow-500 rounded-full"></div>
           <h3 className="text-xl font-bold text-yellow-400">
-            BACHELOR OF TECHNOLOGY (B.TECH) – COMPUTER SCIENCE
+            BACHELOR OF ENGINEERING – INFORMATION SCIENCE
           </h3>
           <span className="bg-gray-800 text-white px-3 py-1 rounded-full text-sm border border-yellow-500 mt-1 mb-2 inline-block">
-            2019 – 2023
+            2021 – 2025
           </span>
-          <p>Sri Manakula Vinayagar Engineering College, Puducherry</p>
-          <p className="mt-1">CGPA: 7.76</p>
+          <p>Siddaganga Institute Of Technology</p>
+          <p className="mt-1">CGPA: 8.58</p>
         </div>
 
         {/* HSC */}
         <div className="relative">
           <div className="absolute -left-4 top-1 w-3 h-3 bg-yellow-500 rounded-full"></div>
           <h3 className="text-xl font-bold text-yellow-400">
-            HIGHER SECONDARY (HSC) – COMPUTER SCIENCE
+            2nd PUC
           </h3>
           <span className="bg-gray-800 text-white px-3 py-1 rounded-full text-sm border border-yellow-500 mt-1 mb-2 inline-block">
-            2018 – 2019
+            2019 – 2021
           </span>
-          <p>Amalorpavam Higher Secondary School, Puducherry</p>
+          <p>Vikas PU College </p>
           <p className="mt-1">
-            <span className="font-semibold">Specialization:</span> Computer Science
+            <span className="font-semibold">Specialization:</span> PCMB
           </p>
-          <p>Score: 65.1%</p>
+          <p>Score: 93.83%</p>
         </div>
 
         {/* SSLC */}
@@ -122,10 +122,10 @@ const EducationSection = () => {
             SECONDARY SCHOOL (SSLC)
           </h3>
           <span className="bg-gray-800 text-white px-3 py-1 rounded-full text-sm border border-yellow-500 mt-1 mb-2 inline-block">
-            2016 – 2017
+            2018 – 2019
           </span>
-          <p>Amalorpavam Higher Secondary School, Puducherry</p>
-          <p>Score: 89.2%</p>
+          <p>Sri Siddaganga Silver Jubilee High School</p>
+          <p>Score: 93.12%</p>
         </div>
       </div>
       </Container>

@@ -30,18 +30,17 @@ const NavigationBar = () => {
 <a href="#skills" className="hover:text-blue-600 transition">
   Skills
 </a>
-          <Link href="/experience" className="hover:text-blue-600 transition">
-            Experience
-          </Link>
-          <Link href="/projects" className="hover:text-blue-600 transition">
-            Projects
-          </Link>
-          {/* <Link href="/open-source" className="hover:text-blue-600 transition">
-            Open Source
-          </Link> */}
+<a href="#Experience" className="hover:text-blue-600 transition">
+Experience
+</a>
+<a href="#Projects" className="hover:text-blue-600 transition">
+Projects
+</a>    
+        
+         
           <Link
             href="/contact"
-            className="font-bold text-blue-800 dark:text-white"
+            className="font-bold text-blue-800"
           >
             Contact Me
           </Link>
