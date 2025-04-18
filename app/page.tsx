@@ -9,6 +9,7 @@ import SkillsSection from "./components/SkillsSection";
 import ExperienceSection from "./components/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
 import ContactSection from "./components/ContactSection";
+import Footer from "@/components/Footer";
 
 
 const RootPage = () => {
@@ -21,6 +22,7 @@ const RootPage = () => {
       <ExperienceSection />
       <ProjectsSection />
       <ContactSection/>
+      <Footer/>
     </div>
   );
 };
