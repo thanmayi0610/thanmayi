@@ -3,7 +3,7 @@
 
 import NavigationBar from "@/components/NavigationBar";
 import React from "react";
-import HeroSection from "./components/HeroSection";
+
 import EducationSection from "./components/EducationSection";
 import SkillsSection from "./components/SkillsSection";
 import ExperienceSection from "./components/ExperienceSection";

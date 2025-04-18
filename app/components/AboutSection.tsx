@@ -1,8 +1,8 @@
-
 "use client";
 
 import { useEffect, useState } from "react";
 import Container from "./Container";
+import Image from "next/image";
 
 const birthDate = new Date("2003-08-06T00:00:00");
 
@@ -16,11 +16,11 @@ const calculateAge = () => {
 const AboutSection = () => {
   const [age, setAge] = useState<number | null>(null);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const updateAge = () => setAge(calculateAge());
     updateAge();
     const interval = setInterval(updateAge, 100);
-
     return () => clearInterval(interval);
   }, []);
 
@@ -33,10 +33,11 @@ const AboutSection = () => {
 
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
           <div className="w-full lg:w-1/2 flex justify-center mb-8 lg:mb-0">
-            <img
+            <Image
               src="/developer.jpg"
               alt="Profile"
-              style={{ height: "450px", width: "950px" }}
+              width={950}
+              height={450}
               className="rounded-lg max-w-xs md:max-w-sm"
             />
           </div>
@@ -47,17 +48,17 @@ const AboutSection = () => {
             </h1>
             <p className="text-lg text-indent-8">I develop features... and unexpected bugs😅</p>
             <p className="text-indent-8">
-              Hello! I'm currently pursuing a degree in{" "}
+              Hello! I&apos;m currently pursuing a degree in{" "}
               <span className="text-yellow-300 font-semibold">
                 Bachelor of Engineering in Information Science
               </span>{" "}
-              from Siddaganga Institute Of Technology. I'm a curious and keen
+              from Siddaganga Institute Of Technology. I&apos;m a curious and keen
               learner, always eager to explore new technologies and concepts.
             </p>
             <p className="text-indent-8">
-              Right now, I'm gaining hands-on experience through an internship at
+              Right now, I&apos;m gaining hands-on experience through an internship at
               <span className="text-yellow-300 font-semibold"> Stack Lane</span>{" "}
-              <span className="text-yellow-300 font-semibold">by Purple Shorts</span>, where I'm learning how real-world software development works and sharpening my technical skills.
+              <span className="text-yellow-300 font-semibold">by Purple Shorts</span>, where I&apos;m learning how real-world software development works and sharpening my technical skills.
             </p>
             <p className="text-indent-8">
               My future goal is to become a skilled Software Engineer, building
@@ -75,7 +76,7 @@ const AboutSection = () => {
               <div>
                 🎓 Degree: <span className="text-yellow-300">CSE Undergrad</span>
               </div>
-              <div>🌐 Website: You're already here!</div>
+              <div>🌐 Website: You&apos;re already here!</div>
               <div>
                 📧 Email:{" "}
                 <span className="text-yellow-300">thanmayithanmayi81@gmail.com</span>
