@@ -1,6 +1,6 @@
-
 import { FaGithub } from "react-icons/fa";
 import { PiGlobeHemisphereWest } from "react-icons/pi";
+import Image from "next/image";
 import Container from "./Container";
 
 type Project = {
@@ -24,30 +24,27 @@ const projects: Project[] = [
     description:
       "A personal portfolio website showcasing my projects, skills, and experiences built with Next.js and tailwindCSS.",
     githubUrl: "https://github.com/thanmayi0610/thanmayi",
-    
   },
   {
     title: "Hono-Website-Clone",
     description:
       "A responsive clone of the Hono website, replicating its design and layout for learning and development purposes.",
     githubUrl: "https://github.com/thanmayi0610/copper",
-   
   },
   {
     title: "An Application to Detect Plant Disease and Remedies",
-    description: "A machine learning-based system using image recognition for early crop disease detection, offering real-time monitoring and actionable solutions for sustainable farming.",
-    
+    description:
+      "A machine learning-based system using image recognition for early crop disease detection, offering real-time monitoring and actionable solutions for sustainable farming.",
   },
   {
     title: "Sorting Visualizer",
-    description: "A web-based sorting visualizer that interactively demonstrates Merge, Bubble, Selection, Insertion, and Quick Sort algorithms to enhance understanding of their operations and efficiency.",
-    
+    description:
+      "A web-based sorting visualizer that interactively demonstrates Merge, Bubble, Selection, Insertion, and Quick Sort algorithms to enhance understanding of their operations and efficiency.",
   },
   {
     title: "IPL Score Prediction",
     description:
       "Developed a machine learning model to predict IPL scores in live matches using Python, leveraging historical data, player stats, and real-time match conditions.",
-    
   },
 ];
 
@@ -100,26 +97,17 @@ export default function ProjectsSection() {
                     rel="noopener noreferrer"
                     className="text-teal-400 hover:underline flex items-center gap-1"
                   >
-                    <img
+                    <Image
                       src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Pypi_logo.svg"
                       alt="PyPI"
-                      className="h-4"
+                      width={16}
+                      height={16}
+                      className="h-4 w-auto"
                     />
                     View on PyPI
                   </a>
                 )}
-                {project.private && (
-                  <span className="text-gray-400 flex items-center gap-1">
-                    <FaGithub size={18} />
-                    Private Repository
-                  </span>
-                )}
               </div>
-              {project.private && (
-                <span className="inline-block mt-4 bg-yellow-400 text-white text-xs font-bold px-2 py-1 rounded-full">
-                  Private
-                </span>
-              )}
             </div>
           ))}
         </div>
