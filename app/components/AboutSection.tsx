@@ -16,7 +16,7 @@ const calculateAge = () => {
 const AboutSection = () => {
   const [age, setAge] = useState<number | null>(null);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+ 
   useEffect(() => {
     const updateAge = () => setAge(calculateAge());
     updateAge();

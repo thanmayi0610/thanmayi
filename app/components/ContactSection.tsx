@@ -5,7 +5,7 @@ import { useState } from "react";
 import Container from "./Container";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { PiXLogoThin } from "react-icons/pi"; // for X (formerly Twitter)
+
 
 export default function ContactSection() {
   const [showDetails, setShowDetails] = useState(false);
